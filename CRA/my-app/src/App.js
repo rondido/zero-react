@@ -1,23 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
+import Welcome from "./components/Welcome";
 
 function App() {
+  const info = {
+    firstName: "Park",
+    lastName: "Jin",
+    withImg: true,
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. HI React CRA
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header title={"Learn React A"} />
+      <Header title={"Learn React B"} />
+      <Header title={"Learn React C"} /> */}
+      <Header />
+      <Welcome {...info} />
     </div>
   );
 }
