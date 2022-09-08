@@ -1,6 +1,6 @@
 // React Component!
 // Follow <-> following
-export function FollowButton() {
+function FollowButton() {
   //following이라는 변수를 만들고 초기값은 false
   //following의 상태값관리하기 위해 setFollwing
   const [following, setFollwing] = React.useState(false);
@@ -20,7 +20,7 @@ export function FollowButton() {
 
   const followBtnStyle = {
     ...commonBtnStyle,
-    backgroundColor: "black",
+    backgroundColor: "blue",
     color: "white",
   };
 
@@ -43,3 +43,4 @@ export function FollowButton() {
     </div>
   );
 }
+export default FollowButton;
